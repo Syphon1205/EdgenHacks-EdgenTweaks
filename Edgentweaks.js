@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         EdgenHacks
+// @name         Edgentweaks
 // @namespace    
-// @version      1.5.2
+// @version      1.8.7
 // @description  Adds tweaks to edgenuity
 // @author       GW / Syphon1205 / roglemorph
 
@@ -9,7 +9,7 @@
 // @grant        none
 // ==/UserScript==
 
-//changes 4-1-21
+//changes 11-6-21
 //vocab, search selection fix
 //Removed note reading, aslap,
 //removed a few bugs
@@ -375,7 +375,7 @@ setTimeout( //2 sec delay to load before trying to run
         window.copyright = document.createElement("p")
         window.copyright.innerHTML = "EdgenTweaks Version 1.5.2 by Syphon1205 1.5.1 by roglemorph original by Gradyn Wursten (<a href='https://github.com/Syphon1205/EdgenHacks-EdgenTweaks/issues'>Report a bug!</a>) (<a href='https://host.gradyn.com/edgentweaks/support.html'>Support the project!</a>)  (<a href='https://github.com/Syphon1205/EdgenHacks-EdgenTweaks'>Github</a>) <br> This is free and unencumbered software released into the public domain.Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means By Syphon1205, Gradyn Wursten, and roglemorph ."
 
-        window.copyright.style.color = "gray"
+        window.copyright.style.color = "blue"
         window.copyright.style.width = "100%"
         $("#tweaksmenu").append(window.shortcutinfo, window.copyright)
         document.getElementById("tweaksmenu").children[1].onclick = easteregg
@@ -495,7 +495,7 @@ function vocabCompleter() {
     window.frames[0].document.getElementsByClassName("word-textbox")[0].value = txt;
     $("#stageFrame").contents().find(".word-textbox.word-normal")[0].dispatchEvent(new Event("keyup"));
     } catch{return;}
-    var speed = 50;
+    var speed = 75;
          output += ("Vocab Completer, ")
         $("#stageFrame").contents().find(".playbutton.vocab-play")[0].click()
         $("#stageFrame").contents().find(".playbutton.vocab-play")[1].click()
