@@ -1,24 +1,20 @@
 // ==UserScript==
-// @name         Edgentweaks
-// @namespace    
-// @version      1.11 Pre-April
+// @name         EdgenTweaks
+// @namespace    https://github.com/de-y/edgentweaks
+// @version      1.5.6
 // @description  Adds tweaks to edgenuity
-// @author       GW / Syphon1205 / roglemorph / De-y
-
+// @updateURL  https://raw.githubusercontent.com/De-y/edgentweaks/main/edgentweaks.js
+// @downloadURL  hthttps://raw.githubusercontent.com/De-y/edgentweaks/main/edgentweaks.js
+// @author       de-y, Gradyn & Syphon1205
 // @match        *://*.core.learn.edgenuity.com/*
+// @match        https://student.edgenuity.com/*
 // @grant        none
 // ==/UserScript==
 
-//changes 3/30/23
-//vocab speed changed
-//Removed note reading, aslap,
-//removed a few minor bugs note some will still be present
-//movable window still un the works
-//stealth error will be patched but supported browsers Edge and Chrome
 // CURRENTLY DOING MAJOR REWORK
-// CHATGPT INTERGRATION SOON
 
-const version_num = '1.11.pre'
+
+const version_num = '1.5.6'
 var $, jQuery;
 $ = jQuery = window.jQuery;
 
@@ -341,8 +337,10 @@ document.body.appendChild(iframe);
 //Create the button
 let btn = document.createElement("button");
 btn.innerText = "Close Search";
+
 //Append the button to the body
 document.body.appendChild(btn);
+
 //Add click event listener to the button
 btn.addEventListener("click", function() {
   iframe.style.display = "none";
