@@ -1,4 +1,4 @@
 # EdgenHacks-EdgenTweaks
 Hacks for edgenuity
 
-# Please use the 1.11.pre version because i removed the old one, Thanks.
+# Please use version 1.5 as its the latest.
