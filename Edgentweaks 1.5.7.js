@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EdgenTweaks
 // @namespace    https://github.com/de-y/edgentweaks
-// @version      1.5.6
+// @version      1.5.7
 // @description  Adds tweaks to edgenuity
 // @updateURL  https://raw.githubusercontent.com/De-y/edgentweaks/main/edgentweaks.js
 // @downloadURL  hthttps://raw.githubusercontent.com/De-y/edgentweaks/main/edgentweaks.js
@@ -14,7 +14,7 @@
 // CURRENTLY DOING MAJOR REWORK
 
 
-const version_num = '1.5.6'
+const version_num = '1.5.7'
 var $, jQuery;
 $ = jQuery = window.jQuery;
 
@@ -319,7 +319,7 @@ setTimeout( //2 sec delay to load before trying to run
 
 
 })
-        buildMenuButton("Open ChatGPT", "chatgptbutton", function chatgpt() {
+        buildMenuButton("Open Claude", "chatgptbutton", function chatgpt() {
 
 
 /* create the iframe
@@ -347,7 +347,7 @@ btn.addEventListener("click", function() {
   btn.parentNode.removeChild(btn);
 });*/
             window.open(
-            "https://chat.openai.com", "_blank");
+            "https://claude.ai/login", "_blank");
 })
         buildMenuButton("Search Config", "scbutton", function() {
             if (document.getElementById("searchconfig").style.visibility == "hidden") { //visiblitly handler for configpane button
